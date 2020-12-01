@@ -47,60 +47,62 @@ class Intro extends React.Component {
                   />
                 </strong>
               </p>
-              <p className="pt-1">
-                <a
-                  className="btn btn-outline-light btn btn-block js-scroll px-4"
-                  href="http://multiyouth.com"
-                  role="button"
-                >
-                  MultiYouth
+              <div style={{ maxWidth: '400px', display: 'block', marginRight: 'auto', marginLeft: 'auto' }}>
+                <p className="pt-1">
+                  <a
+                    className="btn btn-outline-light btn btn-block js-scroll px-4"
+                    href="http://multiyouth.com"
+                    role="button"
+                  >
+                    MultiYouth
                 </a>
-              </p>
-              <p className="pt-1">
-                <a
-                  className="btn btn-outline-light btn btn-block js-scroll px-4"
-                  href="http://multiyouth.com/multiculturalyouth"
-                  role="button"
-                >
-                  多文化ユースプロジェクト
+                </p>
+                <p className="pt-1">
+                  <a
+                    className="btn btn-outline-light btn btn-block js-scroll px-4"
+                    href="http://multiyouth.com/multiculturalyouth"
+                    role="button"
+                  >
+                    多文化ユースプロジェクト
                 </a>
-              </p>
-              <p className="pt-1">
-                <a
-                  className="btn btn-outline-light btn btn-block js-scroll px-4"
-                  href="http://github.com/rajanvalencia"
-                  role="button"
-                >
-                  Github
+                </p>
+                <p className="pt-1">
+                  <a
+                    className="btn btn-outline-light btn btn-block js-scroll px-4"
+                    href="http://github.com/rajanvalencia"
+                    role="button"
+                  >
+                    Github
                 </a>
-              </p>
-              <p className="pt-1">
-                <a
-                  className="btn btn-outline-light btn btn-block js-scroll px-4"
-                  href="http://instagram.com/instagram"
-                  role="button"
-                >
-                  Instagram
+                </p>
+                <p className="pt-1">
+                  <a
+                    className="btn btn-outline-light btn btn-block js-scroll px-4"
+                    href="http://instagram.com/instagram"
+                    role="button"
+                  >
+                    Instagram
                 </a>
-              </p>
-              <p className="pt-1">
-                <a
-                  className="btn btn-outline-light btn btn-block js-scroll px-4"
-                  href="http://facebook.com/rajanvalencia"
-                  role="button"
-                >
-                  Facebook
+                </p>
+                <p className="pt-1">
+                  <a
+                    className="btn btn-outline-light btn btn-block js-scroll px-4"
+                    href="http://facebook.com/rajanvalencia"
+                    role="button"
+                  >
+                    Facebook
                 </a>
-              </p>
-              <p className="pt-1">
-                <a
-                  className="btn btn-outline-light btn btn-block js-scroll px-4"
-                  href="http://twitter.com/rajanvalencia"
-                  role="button"
-                >
-                  Twitter
+                </p>
+                <p className="pt-1">
+                  <a
+                    className="btn btn-outline-light btn btn-block js-scroll px-4"
+                    href="http://twitter.com/rajanvalencia"
+                    role="button"
+                  >
+                    Twitter
                 </a>
-              </p>
+                </p>
+              </div>
             </div>
           </div>
         </div>
