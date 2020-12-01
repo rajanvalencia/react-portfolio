@@ -78,7 +78,7 @@ class Intro extends React.Component {
                 <p className="pt-1">
                   <a
                     className="btn btn-outline-light btn btn-block js-scroll px-4"
-                    href="http://instagram.com/instagram"
+                    href="http://instagram.com/rajanvalencia"
                     role="button"
                   >
                     Instagram
