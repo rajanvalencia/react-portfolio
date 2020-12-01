@@ -2,6 +2,8 @@ import React from "react";
 import "./stars.scss";
 import Typed from "react-typed";
 import logo1 from "../img/rajanvalencia.JPG";
+import multiyouthLogo from "../img/white_logo_transparent_background.png";
+import tabunkayouth from "../img/multiculturalyouth-image.png";
 
 class Intro extends React.Component {
   render() {
@@ -18,18 +20,19 @@ class Intro extends React.Component {
               <img
                 src={logo1}
                 alt="logo"
-                style={{ maxWidth: "80px", borderRadius: '50%' }}
+                style={{ maxWidth: "60px", borderRadius: '50%' }}
               />
-              <h2 className="intro-title mb-4">Yamazaki Rajan Valencia</h2>
+              <h3 className="mb-4" style={{ color: '#fff' }}>Yamazaki Rajan Valencia</h3>
               <p className="intro-subtitle">
                 <span className="text-slider-items"></span>
                 <strong className="text-slider">
                   <Typed
                     strings={[
-                      "Multiyouth CEO",
-                      "Full-stack Web Developer"
+                      "MultiYouth CEO",
+                      "Full-stack Web Developer",
+                      "The Multicultural Youth Project Deputy Representative"
                     ]}
-                    typeSpeed={80}
+                    typeSpeed={30}
                     backDelay={1100}
                     backSpeed={30}
                     loop
@@ -37,12 +40,13 @@ class Intro extends React.Component {
                   <br />
                   <Typed
                     strings={[
-                      "マルチユース CEO",
-                      "フルスタックエンジニア"
+                      "マルチユース 最高経営責任者",
+                      "フルスタックエンジニア",
+                      "多文化ユースプロジェクト副代表"
                     ]}
-                    typeSpeed={150}
+                    typeSpeed={90}
                     backDelay={1100}
-                    backSpeed={50}
+                    backSpeed={30}
                     loop
                   />
                 </strong>
@@ -54,7 +58,8 @@ class Intro extends React.Component {
                     href="http://multiyouth.com"
                     role="button"
                   >
-                    MultiYouth
+                    <img src={multiyouthLogo} width="100" style={{ borderRadius: '8px', marginRight: '10px' }} />
+                    MultiYouth (近日公開)
                 </a>
                 </p>
                 <p className="pt-1">
