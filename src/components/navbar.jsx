@@ -1,7 +1,7 @@
 import React from "react";
 import $ from "jquery";
 
-import logo1 from "../img/male1.png";
+import logo1 from "../img/rajanvalencia.JPG";
 import logo2 from "../img/male.png";
 
 class Navbar extends React.Component {
@@ -16,7 +16,7 @@ class Navbar extends React.Component {
     const nav = $("nav");
     let navHeight = nav.outerHeight();
 
-    $(".navbar-toggler").on("click", function() {
+    $(".navbar-toggler").on("click", function () {
       if (!$("#mainNav").hasClass("navbar-reduce")) {
         $("#mainNav").addClass("navbar-reduce");
       }
@@ -27,7 +27,7 @@ class Navbar extends React.Component {
       offset: navHeight
     });
 
-    $(".js-scroll").on("click", function() {
+    $(".js-scroll").on("click", function () {
       $(".navbar-collapse").collapse("hide");
     });
 
@@ -51,10 +51,10 @@ class Navbar extends React.Component {
       }
     });
 
-    $('a.js-scroll[href*="#"]:not([href="#"])').on("click", function() {
+    $('a.js-scroll[href*="#"]:not([href="#"])').on("click", function () {
       if (
         window.location.pathname.replace(/^\//, "") ===
-          this.pathname.replace(/^\//, "") &&
+        this.pathname.replace(/^\//, "") &&
         window.location.hostname === this.hostname
       ) {
         var target = $(this.hash);
@@ -74,7 +74,7 @@ class Navbar extends React.Component {
       }
     });
 
-    $(".js-scroll").on("click", function() {
+    $(".js-scroll").on("click", function () {
       $(".navbar-collapse").collapse("hide");
     });
   }
@@ -90,49 +90,9 @@ class Navbar extends React.Component {
             <img
               src={this.state.logo}
               alt="logo"
-              style={{ maxWidth: "100px" }}
+              style={{ maxWidth: "80px", borderRadius: '50%' }}
             />
           </a>
-          <button
-            className="navbar-toggler collapsed"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarDefault"
-            aria-controls="navbarDefault"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-          <div
-            className="navbar-collapse collapse justify-content-end"
-            id="navbarDefault"
-          >
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <a className="nav-link js-scroll active" href="#home">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll" href="#about">
-                  About
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll" href="#work">
-                  Work
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll" href="#contact">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
         </div>
       </nav>
     );
