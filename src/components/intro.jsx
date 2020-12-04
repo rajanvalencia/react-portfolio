@@ -32,6 +32,7 @@ class Intro extends React.Component {
                       "Full-stack Web Developer",
                       "The Multicultural Youth Project Deputy Representative"
                     ]}
+                    style={{ fontSize: '20px' }}
                     typeSpeed={30}
                     backDelay={1100}
                     backSpeed={30}
@@ -44,6 +45,7 @@ class Intro extends React.Component {
                       "フルスタックエンジニア",
                       "多文化ユースプロジェクト副代表"
                     ]}
+                    style={{ fontSize: '20px' }}
                     typeSpeed={90}
                     backDelay={1100}
                     backSpeed={30}
