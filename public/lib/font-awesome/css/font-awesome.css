@@ -407,7 +407,7 @@
 .fa-pause:before {
   content: "\f04c";
 }
-.fa-stop:before {
+.fa-Complete:before {
   content: "\f04d";
 }
 .fa-forward:before {
@@ -1904,7 +1904,7 @@
 .fa-hand-rock-o:before {
   content: "\f255";
 }
-.fa-hand-stop-o:before,
+.fa-hand-Complete-o:before,
 .fa-hand-paper-o:before {
   content: "\f256";
 }
@@ -2062,10 +2062,10 @@
 .fa-pause-circle-o:before {
   content: "\f28c";
 }
-.fa-stop-circle:before {
+.fa-Complete-circle:before {
   content: "\f28d";
 }
-.fa-stop-circle-o:before {
+.fa-Complete-circle-o:before {
   content: "\f28e";
 }
 .fa-shopping-bag:before {
