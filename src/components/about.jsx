@@ -69,44 +69,15 @@ class About extends React.Component {
               <div className="box-shadow-full">
                 <div className="row">
                   <div className="col-md-6">
-                    <div className="row">
-                      <div
-                        className="col-sm-6 col-md-5"
-                        style={{ margin: "0 auto" }}
-                      >
-                        <div
-                          className="about-img"
-                          style={{ textAlign: "center" }}
-                        >
-                          <img
-                            className="img-fluid rounded b-shadow-a"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                    </div>
                     <div className="skill-mf">
-                      {/* <p className="title-s">Skill</p> */}
-                      {this.state.skills.map(skill => {
-                        return (
-                          <React.Fragment key={skill.id}>
-                            <span>{skill.content}</span>{" "}
-                            <span className="pull-right">
-                              {skill.porcentage}
-                            </span>
-                            <div className="progress">
-                              <div
-                                className="progress-bar"
-                                role="progressbar"
-                                style={{ width: skill.porcentage }}
-                                aria-valuenow={skill.value}
-                                aria-valuemin="0"
-                                aria-valuemax="100"
-                              ></div>
-                            </div>
-                          </React.Fragment>
-                        );
-                      })}
+                      <img
+                        src="https://camo.githubusercontent.com/ce795b7beb49cce3e1f36d57137e19214687a67ad6041c45280ff83ad19a56d7/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170693f757365726e616d653d72616a616e76616c656e63696126636f756e745f707269766174653d747275652673686f775f69636f6e733d74727565267468656d653d6d6f6e6f6b6169"
+                        style={{ width: '100%' }}
+                      />
+                      <img
+                        src="https://camo.githubusercontent.com/7aeaa6025519fb9a4783d473c3c46cf07fcc0c385f9a139a2e4e1d80cfd05865/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170692f746f702d6c616e67732f3f757365726e616d653d72616a616e76616c656e636961266c61796f75743d636f6d7061637426636f756e745f707269766174653d747275652673686f775f69636f6e733d74727565267468656d653d6d6f6e6f6b6169"
+                        style={{ width: '100%' }}
+                      />
                     </div>
                   </div>
                   <div className="col-md-6">

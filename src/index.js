@@ -32,7 +32,10 @@ import Preloader from './components/preloader';
 
 ReactDOM.render(
     <React.Fragment>
+        <Preloader />
         <Intro />
+        <About />
+        <BackToTop />
     </React.Fragment>,
     document.getElementById('root'));
 
