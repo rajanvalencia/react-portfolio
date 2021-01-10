@@ -256,7 +256,7 @@ export default function Intro() {
                   onMouseLeave={onMouseLeave}
                 >
                   <img src={isMouseOnEnter ? multiyouthMainLogo : multiyouthWhiteLogo} width="100" style={{ borderRadius: '8px', marginRight: '10px' }} />
-                    MultiYouth (Coming soon)
+                    MultiYouth (Soon)
                 </a>
               </p>
               <p className="pt-1">
