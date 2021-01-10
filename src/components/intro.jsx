@@ -250,6 +250,18 @@ export default function Intro() {
               <p className="pt-1">
                 <a
                   className="btn btn-outline-light btn btn-block js-scroll px-4"
+                  href="http://multiyouth.com/en"
+                  role="button"
+                  onMouseEnter={onMouseEnter}
+                  onMouseLeave={onMouseLeave}
+                >
+                  <img src={isMouseOnEnter ? multiyouthMainLogo : multiyouthWhiteLogo} width="100" style={{ borderRadius: '8px', marginRight: '10px' }} />
+                    MultiYouth (Coming soon)
+                </a>
+              </p>
+              <p className="pt-1">
+                <a
+                  className="btn btn-outline-light btn btn-block js-scroll px-4"
                   href="http://multiyouth.com/multiculturalyouth"
                   role="button"
                 >
