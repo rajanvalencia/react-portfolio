@@ -2,7 +2,7 @@
  * 
  *   typed.js - A JavaScript Typing Animation Library
  *   Author: Matt Boldt <me@mattboldt.com>
- *   Version: v2.0.11
+ *   Version: v2.0.9
  *   Url: https://github.com/mattboldt/typed.js
  *   License(s): MIT
  * 
@@ -183,7 +183,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    value: function begin() {
 	      var _this = this;
 	
-	      this.options.onBegin(this);
 	      this.typingComplete = false;
 	      this.shuffleStringsIfNeeded(this);
 	      this.insertCursor();
@@ -308,7 +307,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	
 	    /**
-	     * We're done typing the current string
+	     * We're done typing all strings
 	     * @param {string} curString the current string in the strings array
 	     * @param {number} curStrPos the current position in the curString
 	     * @private
@@ -874,12 +873,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	  contentType: 'html',
 	
 	  /**
-	   * Before it begins typing
-	   * @param {Typed} self
-	   */
-	  onBegin: function onBegin(self) {},
-	
-	  /**
 	   * All typing is complete
 	   * @param {Typed} self
 	   */
@@ -953,6 +946,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 3 */
 /***/ (function(module, exports) {
 
+	
 	/**
 	 * TODO: These methods can probably be combined somehow
 	 * Parse HTML tags & HTML Characters
