@@ -1,8 +1,12 @@
 # React-portfolio
 
-A boilrplate react portfolio to showcase your projects and work
+## Build docker
 
+```
+docker build -t react-portfolio .
+```
+## Run docker
 
-Dummy-portfolio link -> https://shloksomani.github.io/react-portfolio/
-
-![](test.gif)
+```
+docker run -it -p 3004:3004 react-portfolio:latest
+```
