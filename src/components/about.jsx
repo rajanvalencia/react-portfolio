@@ -71,14 +71,17 @@ class About extends React.Component {
                     <div className="skill-mf">
                       <img
                         src="https://github-readme-stats.vercel.app/api?username=rajanvalencia&count_private=true&show_icons=true&theme=dark"
+                        alt=""
                         style={{ width: '100%' }}
                       />
                       <img
                         src="https://github-readme-streak-stats.herokuapp.com/?user=rajanvalencia&theme=dark"
+                        alt=""
                         style={{ width: '100%' }}
                       />
                       <img
                         src="https://github-readme-stats.vercel.app/api/top-langs/?username=rajanvalencia&count_private=true&layout=compact&show_icons=true&theme=dark"
+                        alt=""
                         style={{ width: '100%' }}
                       />
                     </div>

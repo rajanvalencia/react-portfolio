@@ -32,6 +32,7 @@ export default function Intro() {
       await setTimeout(handleOnComplete, 1000);
     }
     handle();
+    // eslint-disable-next-line
   }, [complete]);
 
   const handleOnComplete = () => {
@@ -243,7 +244,7 @@ export default function Intro() {
                   onMouseEnter={onMouseEnter}
                   onMouseLeave={onMouseLeave}
                 >
-                  <img src={isMouseOnEnter ? multiyouthMainLogo : multiyouthWhiteLogo} width="100" style={{ borderRadius: '8px', marginRight: '10px' }} />
+                  <img src={isMouseOnEnter ? multiyouthMainLogo : multiyouthWhiteLogo} width="100" alt="" style={{ borderRadius: '8px', marginRight: '10px' }} />
                     MultiYouth (近日公開)
                 </a>
               </p>
