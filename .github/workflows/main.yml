@@ -13,14 +13,13 @@ jobs:
     - name: Checkout source code
       uses: actions/checkout@v2
     
-    - name: Set up JDK 8
-      uses: actions/setup-java@v2
+    - name: Setup Node
+      uses: actions/setup-node@v2
       with:
-         distribution: 'adopt' # See 'Supported distributions' for available options
-         java-version: '8'
-          
-    - name: Build with Node.js
-      run: yarn && yarn build
+        node-version: '10'
+    
+    - name: Install and Build
+      run: yarn && yarn next-build
       
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
