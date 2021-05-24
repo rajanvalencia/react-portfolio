@@ -12,14 +12,18 @@ jobs:
     
     - name: Checkout source code
       uses: actions/checkout@v2
+
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x, 14.x]
     
-    - name: Setup Node
-      uses: actions/setup-node@v2
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
       with:
-        node-version: '12'
-    
-    - name: Install and Build
-      run: yarn && yarn build
+        node-version: ${{ matrix.node-version }}
+    - run: yarn && yarn build
       
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
