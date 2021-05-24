@@ -11,7 +11,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x, 14.x]
+        node-version: [12.x]
 
     steps:
     - name: Checkout source code
@@ -22,7 +22,9 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: yarn && yarn build
+    
+    - name: Build
+    - run: npm run build
       
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
