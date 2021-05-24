@@ -22,7 +22,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm run build
+      run: npm install && npm run build
       
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
