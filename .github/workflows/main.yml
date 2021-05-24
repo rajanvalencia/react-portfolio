@@ -7,7 +7,7 @@ on:
     
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout source code
@@ -19,9 +19,6 @@ jobs:
       with:
         node-version: 12.x
 
-    - name: Install and Build
-      run: npm install && npm run build
-      
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
