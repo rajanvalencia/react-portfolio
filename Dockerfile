@@ -1,7 +1,6 @@
 FROM mhart/alpine-node:12 AS builder
 WORKDIR /app
 
-COPY build /app/build
 COPY src /app/src
 COPY public /app/public
 COPY package.json /app	
