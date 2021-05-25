@@ -10,6 +10,6 @@ COPY yarn.lock /app
 RUN apk --no-cache add pkgconfig autoconf automake libtool nasm build-base zlib-dev
 RUN yarn && yarn deploy
 
-EXPOSE 3004
+EXPOSE 5000
 
 CMD [ "serve", "-s", "build" ]
