@@ -19,7 +19,7 @@ jobs:
       with:
         node-version: 12.x
 
-    - name: Instal and Build
+    - name: Install and Build
       run: |
         yarn
         yarn build
