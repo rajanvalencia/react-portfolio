@@ -61,7 +61,7 @@ class About extends React.Component {
 
   render() {
     return (
-      <section id="about" className="about-mf sect-pt4 route" style={{ backgroundColor: '#121212' }}>
+      <section id="about" className="about-mf sect-pt4 route" style={{ backgroundColor: '#121212', color: '#cfcfcf' }}>
         <div className="container">
           <div className="row">
             <div className="col-sm-12">
@@ -87,9 +87,9 @@ class About extends React.Component {
                     </div>
                   </div>
                   <div className="col-md-6">
-                    <div className="about-me pt-4 pt-md-0" style={{ color: '#9e9e9e' }}>
+                    <div className="about-me pt-4 pt-md-0">
                       <div className="title-box-2">
-                        <h5 className="title-left" style={{ color: '#cfcfcf' }}>About Me</h5>
+                        <h5 className="title-left">About Me</h5>
                       </div>
                       {this.state.about_me.map(content => {
                         return (

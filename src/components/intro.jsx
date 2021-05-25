@@ -148,7 +148,7 @@ export default function Intro() {
               alt="logo"
               style={{ maxWidth: "60px", borderRadius: '50%' }}
             />
-            <h3 className="mb-4" style={{ color: '#fff' }}>Yamazaki Rajan Valencia</h3>
+            <h3 className="mb-4">Yamazaki Rajan Valencia</h3>
             <p className="intro-subtitle">
               <span className="text-slider-items"></span>
               <strong className="text-slider">
