@@ -19,6 +19,11 @@ jobs:
       with:
         node-version: 12.x
 
+    - name: Instal and Build
+      run: |
+        yarn
+        yarn build
+
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
