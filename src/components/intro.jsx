@@ -245,7 +245,19 @@ export default function Intro() {
                   onMouseLeave={onMouseLeave}
                 >
                   <img src={isMouseOnEnter ? multiyouthMainLogo : multiyouthWhiteLogo} width="100" alt="" style={{ borderRadius: '8px', marginRight: '10px' }} />
-                    MultiYouth (近日公開)
+                    MultiYouth (日本語)
+                </a>
+              </p>
+              <p className="pt-1">
+                <a
+                  className="btn btn-outline-light btn btn-block js-scroll px-4"
+                  href="http://multiyouth.com/en-us"
+                  role="button"
+                  onMouseEnter={onMouseEnter}
+                  onMouseLeave={onMouseLeave}
+                >
+                  <img src={isMouseOnEnter ? multiyouthMainLogo : multiyouthWhiteLogo} width="100" alt="" style={{ borderRadius: '8px', marginRight: '10px' }} />
+                    MultiYouth (English)
                 </a>
               </p>
               <p className="pt-1">
