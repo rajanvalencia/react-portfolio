@@ -1,14 +1,13 @@
 import React from "react";
 import $ from "jquery";
 
-import logo1 from "../img/rajanvalencia.JPG";
 import logo2 from "../img/male.png";
 
 class Navbar extends React.Component {
   constructor() {
     super();
     this.state = {
-      logo: logo1
+      logo: logo2
     };
   }
 
@@ -40,14 +39,6 @@ class Navbar extends React.Component {
           .querySelector(".navbar-expand-md")
           .classList.remove("navbar-trans");
         this.setState({ logo: logo2 });
-      } else {
-        document
-          .querySelector(".navbar-expand-md")
-          .classList.add("navbar-trans");
-        document
-          .querySelector(".navbar-expand-md")
-          .classList.remove("navbar-reduce");
-        this.setState({ logo: logo1 });
       }
     });
 

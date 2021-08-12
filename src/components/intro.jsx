@@ -1,7 +1,6 @@
 import React, { Fragment, useEffect, useState } from "react";
 import "./stars.scss";
 import Typed from "react-typed";
-import logo1 from "../img/rajanvalencia.JPG";
 import multiyouthWhiteLogo from "../img/white_logo_transparent_background.png";
 import multiyouthMainLogo from "../img/logo_transparent_background.png";
 
@@ -143,11 +142,6 @@ export default function Intro() {
       <div className="intro-content display-table">
         <div className="table-cell">
           <div className="container">
-            <img
-              src={logo1}
-              alt="logo"
-              style={{ maxWidth: "60px", borderRadius: '50%' }}
-            />
             <h3 className="mb-4">Yamazaki Rajan Valencia</h3>
             <p className="intro-subtitle">
               <span className="text-slider-items"></span>
