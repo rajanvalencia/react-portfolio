@@ -11,8 +11,8 @@ export default function Intro() {
   const [start, setStart] = useState({
     MultiYouthDeveloper_English: true,
     MultiYouthDeveloper_Japanese: true,
-    FullstackWebDeveloper_English: false,
-    FullstackWebDeveloper_Japanese: false,
+    FullstackWebDeveloper_English: true,
+    FullstackWebDeveloper_Japanese: true,
     TheMulticulturalYouthProjectDeputyRepesentative_English: false,
     TheMulticulturalYouthProjectDeputyRepesentative_Japanese: false
   });
@@ -70,8 +70,10 @@ export default function Intro() {
         ...start,
         TheMulticulturalYouthProjectDeputyRepesentative_English: false,
         TheMulticulturalYouthProjectDeputyRepesentative_Japanese: false,
-        MultiYouthDeveloper_English: true,
-        MultiYouthDeveloper_Japanese: true
+        // MultiYouthDeveloper_English: true,
+        // MultiYouthDeveloper_Japanese: true,
+        FullstackWebDeveloper_English: true,
+        FullstackWebDeveloper_Japanese: true,
       });
       setComplete({
         ...complete,
@@ -165,14 +167,14 @@ export default function Intro() {
                         "フルスタックエンジニア",
                       ]}
                       style={{ fontSize: '20px' }}
-                      typeSpeed={100}
+                      typeSpeed={89}
                       backDelay={1100}
                       backSpeed={90}
                       onComplete={onFullstackWebDeveloper_JapaneseComplete}
                     />
                   </Fragment>
                 }
-                {start.MultiYouthDeveloper_English && start.MultiYouthDeveloper_Japanese &&
+                {/* {start.MultiYouthDeveloper_English && start.MultiYouthDeveloper_Japanese &&
                   <Fragment>
                     <Typed
                       strings={[
@@ -196,7 +198,7 @@ export default function Intro() {
                       onComplete={onMultiYouthDeveloper_JapaneseComplete}
                     />
                   </Fragment>
-                }
+                } */}
                 {start.TheMulticulturalYouthProjectDeputyRepesentative_English && start.TheMulticulturalYouthProjectDeputyRepesentative_Japanese &&
                   <Fragment>
                     <Typed
@@ -216,7 +218,7 @@ export default function Intro() {
                         "多文化ユースプロジェクト副代表"
                       ]}
                       style={{ fontSize: '20px' }}
-                      typeSpeed={90}
+                      typeSpeed={83}
                       backDelay={1100}
                       backSpeed={90}
                       onComplete={onTheMulticulturalYouthProjectDeputyRepesentative_JapaneseComplete}
