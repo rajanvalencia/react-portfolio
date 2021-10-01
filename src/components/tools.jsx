@@ -176,6 +176,28 @@ export default function Tools() {
                 alt: 'Simple Email Service'
             },
         ],
+        gcp: [
+            {
+                link: 'https://firebase.google.com/',
+                img: 'https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg',
+                alt: 'Firebase'
+            },
+            {
+                link: 'https://developers.google.com/apps-script',
+                img: 'https://static.cdnlogo.com/logos/g/12/google-apps-script.svg',
+                alt: 'Google App Script'
+            }, 
+            {
+                link: 'https://cloud.google.com/translate/docs',
+                img: 'https://static.cdnlogo.com/logos/g/31/google-translate.svg',
+                alt: 'Google App Script'
+            }, 
+            {
+                link: 'https://developers.google.com/identity/protocols/oauth2',
+                img: 'https://cdn.worldvectorlogo.com/logos/oauth.svg',
+                alt: 'OAuth2'
+            },
+        ],
         os:[
             {
                 link: 'https://aws.amazon.com/jp/amazon-linux-2/',
@@ -216,19 +238,9 @@ export default function Tools() {
                 alt: 'Github'
             },
             {
-                link: 'https://firebase.google.com/',
-                img: 'https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg',
-                alt: 'Firebase'
-            },
-            {
                 link: 'https://www.docker.com/',
                 img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg',
                 alt: 'Docker'
-            },
-            {
-                link: 'https://oauth.net/2/',
-                img: 'https://cdn.worldvectorlogo.com/logos/oauth.svg',
-                alt: 'OAuth2'
             },
             {
                 link: 'https://www.gnu.org/software/bash/',
@@ -299,6 +311,18 @@ export default function Tools() {
                 <div className="bg-white rounded">
                     <p className="mt-4 p-3" align="left">
                         {tools.aws.map(t => 
+                            <a href={t.link} target="_blank" className="mr-1" data-toggle="tooltip" data-placement="top" title={t.alt}>
+                                <img src={t.img} alt={t.alt} width="40" height="40"/> 
+                            </a>
+                        )}
+                    </p>
+                </div>
+            </li>
+            <li>
+                <h4>GCP</h4>
+                <div className="bg-white rounded">
+                    <p className="mt-4 p-3" align="left">
+                        {tools.gcp.map(t => 
                             <a href={t.link} target="_blank" className="mr-1" data-toggle="tooltip" data-placement="top" title={t.alt}>
                                 <img src={t.img} alt={t.alt} width="40" height="40"/> 
                             </a>
