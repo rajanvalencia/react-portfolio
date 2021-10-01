@@ -71,6 +71,11 @@ export default function Tools() {
                 img: 'https://cdn.worldvectorlogo.com/logos/spring-14.svg',
                 alt: 'Spring Boot'
             }, 
+            {
+                link: 'https://laravel.com',
+                img: 'https://cdn.worldvectorlogo.com/logos/laravel-2.svg',
+                alt: 'Laravel'
+            }, 
         ],
         database:[
             {
@@ -210,8 +215,13 @@ export default function Tools() {
             {
                 link: 'https://cloud.google.com/translate/docs',
                 img: 'https://static.cdnlogo.com/logos/g/31/google-translate.svg',
-                alt: 'Google App Script'
+                alt: 'Cloud Translate'
             }, 
+            {
+                link: 'https://developers.google.com/maps',
+                img: 'https://cdn.worldvectorlogo.com/logos/google-maps-2020-icon.svg',
+                alt: 'Google Maps'
+            },
             {
                 link: 'https://developers.google.com/identity/protocols/oauth2',
                 img: 'https://cdn.worldvectorlogo.com/logos/oauth.svg',
@@ -349,7 +359,7 @@ export default function Tools() {
                 </div>
             </li>
             <li>
-                <h4>GCP</h4>
+                <h4>GCP / Google Developers</h4>
                 <div className="bg-white rounded">
                     <p className="mt-4 p-3" align="left">
                         {tools.gcp.map(t => 
