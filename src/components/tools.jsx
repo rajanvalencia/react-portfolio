@@ -121,12 +121,12 @@ export default function Tools() {
                 alt: 'elastic beanstalk'
             },
             {
-                link: 'https://aws.amazon.com/elasticcontainerregistry/',
+                link: 'https://aws.amazon.com/ecr/',
                 img: 'https://symbols.getvecta.com/stencil_9/12_amazon-ecr.e2bb590423.svg',
                 alt: 'elastic container registry'
             },
             {
-                link: 'https://aws.amazon.com/elasticcontainerservice/',
+                link: 'https://aws.amazon.com/ecs/',
                 img: 'https://symbols.getvecta.com/stencil_9/14_amazon-ecs.0defeec970.svg',
                 alt: 'elastic container service'
             },
@@ -225,6 +225,11 @@ export default function Tools() {
                 link: 'https://code.visualstudio.com/',
                 img: 'https://cdn.worldvectorlogo.com/logos/visual-studio-code-1.svg',
                 alt: 'visual studio code'
+            }, 
+            {
+                link: 'https://stripe.com/',
+                img: 'https://cdn.worldvectorlogo.com/logos/stripe-4.svg',
+                alt: 'stripe'
             }, 
         ]
     };
