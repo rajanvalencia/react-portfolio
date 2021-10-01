@@ -233,6 +233,7 @@ export default function Intro() {
                   className="btn btn-outline-light btn btn-block js-scroll px-4"
                   href="http://multiyouth.com"
                   role="button"
+                  target="_blank"
                   onMouseEnter={onMouseEnter}
                   onMouseLeave={onMouseLeave}
                 >
@@ -245,6 +246,7 @@ export default function Intro() {
                   className="btn btn-outline-light btn btn-block js-scroll px-4"
                   href="http://multiyouth.com/en-us"
                   role="button"
+                  target="_blank"
                   onMouseEnter={onMouseEnter}
                   onMouseLeave={onMouseLeave}
                 >
@@ -257,6 +259,7 @@ export default function Intro() {
                   className="btn btn-outline-light btn btn-block js-scroll px-4"
                   href="http://github.com/rajanvalencia"
                   role="button"
+                  target="_blank"
                 >
                   Github
                 </a>
@@ -266,6 +269,7 @@ export default function Intro() {
                   className="btn btn-outline-light btn btn-block js-scroll px-4"
                   href="http://multiyouth.com/multiculturalyouth"
                   role="button"
+                  target="_blank"
                 >
                   多文化ユースプロジェクト
                 </a>
@@ -275,6 +279,7 @@ export default function Intro() {
                   className="btn btn-outline-light btn btn-block js-scroll px-4"
                   href="http://instagram.com/rajanvalencia"
                   role="button"
+                  target="_blank"
                 >
                   Instagram
                 </a>
@@ -284,6 +289,7 @@ export default function Intro() {
                   className="btn btn-outline-light btn btn-block js-scroll px-4"
                   href="http://facebook.com/rajanvalencia"
                   role="button"
+                  target="_blank"
                 >
                   Facebook
                 </a>
@@ -293,6 +299,7 @@ export default function Intro() {
                   className="btn btn-outline-light btn btn-block js-scroll px-4"
                   href="http://twitter.com/rajanvalencia"
                   role="button"
+                  target="_blank"
                 >
                   Twitter
                 </a>
