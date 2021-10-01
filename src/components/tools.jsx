@@ -68,7 +68,7 @@ export default function Tools() {
             }, 
             {
                 link: 'https://spring.io/projects/spring-boot',
-                img: 'https://cdn.worldvectorlogo.com/logos/spring-14.svg',
+                img: 'https://turreta.com/wp-content/uploads/2017/01/spring-boot-project-logo.png',
                 alt: 'Spring Boot'
             }, 
             {
