@@ -9,8 +9,8 @@ export default function Intro() {
   const [isMouseOnEnter, setIsMouseOnEnter] = useState(false);
 
   const [start, setStart] = useState({
-    MultiYouthCEO_English: true,
-    MultiYouthCEO_Japanese: true,
+    MultiYouthDeveloper_English: true,
+    MultiYouthDeveloper_Japanese: true,
     FullstackWebDeveloper_English: false,
     FullstackWebDeveloper_Japanese: false,
     TheMulticulturalYouthProjectDeputyRepesentative_English: false,
@@ -18,8 +18,8 @@ export default function Intro() {
   });
 
   const [complete, setComplete] = useState({
-    MultiYouthCEO_English: false,
-    MultiYouthCEO_Japanese: false,
+    MultiYouthDeveloper_English: false,
+    MultiYouthDeveloper_Japanese: false,
     FullstackWebDeveloper_English: false,
     FullstackWebDeveloper_Japanese: false,
     TheMulticulturalYouthProjectDeputyRepesentative_English: false,
@@ -35,18 +35,18 @@ export default function Intro() {
   }, [complete]);
 
   const handleOnComplete = () => {
-    if (complete.MultiYouthCEO_English && complete.MultiYouthCEO_Japanese) {
+    if (complete.MultiYouthDeveloper_English && complete.MultiYouthDeveloper_Japanese) {
       setStart({
         ...start,
-        MultiYouthCEO_English: false,
-        MultiYouthCEO_Japanese: false,
+        MultiYouthDeveloper_English: false,
+        MultiYouthDeveloper_Japanese: false,
         FullstackWebDeveloper_English: true,
         FullstackWebDeveloper_Japanese: true
       });
       setComplete({
         ...complete,
-        MultiYouthCEO_English: false,
-        MultiYouthCEO_Japanese: false
+        MultiYouthDeveloper_English: false,
+        MultiYouthDeveloper_Japanese: false
       });
     }
 
@@ -70,8 +70,8 @@ export default function Intro() {
         ...start,
         TheMulticulturalYouthProjectDeputyRepesentative_English: false,
         TheMulticulturalYouthProjectDeputyRepesentative_Japanese: false,
-        MultiYouthCEO_English: true,
-        MultiYouthCEO_Japanese: true
+        MultiYouthDeveloper_English: true,
+        MultiYouthDeveloper_Japanese: true
       });
       setComplete({
         ...complete,
@@ -90,17 +90,17 @@ export default function Intro() {
     setIsMouseOnEnter(false);
   }
 
-  const onMultiYouthCEO_EnglishComplete = () => {
+  const onMultiYouthDeveloper_EnglishComplete = () => {
     setComplete({
       ...complete,
-      MultiYouthCEO_English: true
+      MultiYouthDeveloper_English: true
     });
   }
 
-  const onMultiYouthCEO_JapaneseComplete = () => {
+  const onMultiYouthDeveloper_JapaneseComplete = () => {
     setComplete({
       ...complete,
-      MultiYouthCEO_Japanese: true
+      MultiYouthDeveloper_Japanese: true
     });
   }
 
@@ -146,33 +146,32 @@ export default function Intro() {
             <p className="intro-subtitle">
               <span className="text-slider-items"></span>
               <strong className="text-slider">
-                {start.MultiYouthCEO_English && start.MultiYouthCEO_Japanese ?
+                {start.MultiYouthDeveloper_English && start.MultiYouthDeveloper_Japanese &&
                   <Fragment>
                     <Typed
                       strings={[
-                        "MultiYouth Founder ・ CEO"
+                        "MultiYouth Developer"
                       ]}
                       style={{ fontSize: '20px' }}
-                      typeSpeed={50}
+                      typeSpeed={30}
                       backDelay={1100}
                       backSpeed={90}
-                      onComplete={onMultiYouthCEO_EnglishComplete}
+                      onComplete={onMultiYouthDeveloper_EnglishComplete}
                     />
                     <br />
                     <Typed
                       strings={[
-                        "MultiYouth 創立者 ・ 最高経営責任者",
+                        "MultiYouth 開発者",
                       ]}
                       style={{ fontSize: '20px' }}
                       typeSpeed={50}
                       backDelay={1100}
                       backSpeed={90}
-                      onComplete={onMultiYouthCEO_JapaneseComplete}
+                      onComplete={onMultiYouthDeveloper_JapaneseComplete}
                     />
                   </Fragment>
-                  : null
                 }
-                {start.FullstackWebDeveloper_English && start.FullstackWebDeveloper_Japanese ?
+                {start.FullstackWebDeveloper_English && start.FullstackWebDeveloper_Japanese &&
                   <Fragment>
                     <Typed
                       strings={[
@@ -190,16 +189,14 @@ export default function Intro() {
                         "フルスタックエンジニア",
                       ]}
                       style={{ fontSize: '20px' }}
-                      typeSpeed={90}
+                      typeSpeed={100}
                       backDelay={1100}
                       backSpeed={90}
                       onComplete={onFullstackWebDeveloper_JapaneseComplete}
                     />
                   </Fragment>
-                  :
-                  null
                 }
-                {start.TheMulticulturalYouthProjectDeputyRepesentative_English && start.TheMulticulturalYouthProjectDeputyRepesentative_Japanese ?
+                {start.TheMulticulturalYouthProjectDeputyRepesentative_English && start.TheMulticulturalYouthProjectDeputyRepesentative_Japanese &&
                   <Fragment>
                     <Typed
                       strings={[
@@ -224,8 +221,6 @@ export default function Intro() {
                       onComplete={onTheMulticulturalYouthProjectDeputyRepesentative_JapaneseComplete}
                     />
                   </Fragment>
-                  :
-                  null
                 }
               </strong>
             </p>

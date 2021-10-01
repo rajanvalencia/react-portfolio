@@ -1,4 +1,5 @@
 import React from "react";
+import Tools from "./tools";
 
 class About extends React.Component {
   constructor() {
@@ -43,7 +44,7 @@ class About extends React.Component {
         {
           id: "first-p-about",
           content:
-            "Just another software engineer."
+            "Just another software developer."
         },
         {
           id: "second-p-about",
@@ -89,7 +90,7 @@ class About extends React.Component {
                   <div className="col-md-6">
                     <div className="about-me pt-4 pt-md-0">
                       <div className="title-box-2">
-                        <h5 className="title-left">About Me</h5>
+                        <Tools />
                       </div>
                       {this.state.about_me.map(content => {
                         return (
