@@ -142,10 +142,36 @@ export default function Intro() {
       <div className="intro-content display-table">
         <div className="table-cell">
           <div className="container">
-            <h3 className="mb-4">Yamazaki Rajan Valencia</h3>
+            <h3 className="mb-2">Yamazaki Rajan Valencia</h3>
+            <h3 className="mb-5">山崎 ラジャン バレンシア</h3>
             <p className="intro-subtitle">
               <span className="text-slider-items"></span>
               <strong className="text-slider">
+              {start.FullstackWebDeveloper_English && start.FullstackWebDeveloper_Japanese &&
+                  <Fragment>
+                    <Typed
+                      strings={[
+                        "Full Stack Web Developer",
+                      ]}
+                      style={{ fontSize: '20px' }}
+                      typeSpeed={40}
+                      backDelay={1100}
+                      backSpeed={90}
+                      onComplete={onFullstackWebDeveloper_EnglishComplete}
+                    />
+                    <br />
+                    <Typed
+                      strings={[
+                        "フルスタックエンジニア",
+                      ]}
+                      style={{ fontSize: '20px' }}
+                      typeSpeed={100}
+                      backDelay={1100}
+                      backSpeed={90}
+                      onComplete={onFullstackWebDeveloper_JapaneseComplete}
+                    />
+                  </Fragment>
+                }
                 {start.MultiYouthDeveloper_English && start.MultiYouthDeveloper_Japanese &&
                   <Fragment>
                     <Typed
@@ -168,31 +194,6 @@ export default function Intro() {
                       backDelay={1100}
                       backSpeed={90}
                       onComplete={onMultiYouthDeveloper_JapaneseComplete}
-                    />
-                  </Fragment>
-                }
-                {start.FullstackWebDeveloper_English && start.FullstackWebDeveloper_Japanese &&
-                  <Fragment>
-                    <Typed
-                      strings={[
-                        "Full Stack Web Developer",
-                      ]}
-                      style={{ fontSize: '20px' }}
-                      typeSpeed={40}
-                      backDelay={1100}
-                      backSpeed={90}
-                      onComplete={onFullstackWebDeveloper_EnglishComplete}
-                    />
-                    <br />
-                    <Typed
-                      strings={[
-                        "フルスタックエンジニア",
-                      ]}
-                      style={{ fontSize: '20px' }}
-                      typeSpeed={100}
-                      backDelay={1100}
-                      backSpeed={90}
-                      onComplete={onFullstackWebDeveloper_JapaneseComplete}
                     />
                   </Fragment>
                 }
@@ -267,7 +268,7 @@ export default function Intro() {
                   Github
                 </a>
               </p>
-              <p className="pt-1">
+              {/* <p className="pt-1">
                 <a
                   className="btn btn-outline-light btn btn-block js-scroll px-4"
                   href="http://instagram.com/rajanvalencia"
@@ -293,7 +294,7 @@ export default function Intro() {
                 >
                   Twitter
                 </a>
-              </p>
+              </p> */}
             </div>
           </div>
         </div>

@@ -92,13 +92,6 @@ class About extends React.Component {
                       <div className="title-box-2">
                         <Tools />
                       </div>
-                      {this.state.about_me.map(content => {
-                        return (
-                          <p className="lead" key={content.id}>
-                            {content.content}
-                          </p>
-                        );
-                      })}
                     </div>
                   </div>
                 </div>

@@ -71,6 +71,11 @@ export default function Tools() {
         ],
         aws: [
             {
+                link: 'https://aws.amazon.com/jp/amazon-linux-2/',
+                img: 'https://static-00.iconduck.com/assets.00/aws-ec2-elastic-compute-cloud-icon-423x512-i8pil4nj.png',
+                alt: 'amazon linux 2'
+            }, 
+            {
                 link: 'https://aws.amazon.com/amplify/',
                 img: 'https://docs.amplify.aws/assets/logo-dark.svg',
                 alt: 'amplify'
@@ -161,24 +166,17 @@ export default function Tools() {
                 alt: 'simple email service'
             },
         ],
-        gcp: [
-            {
-                link: 'https://firebase.google.com/',
-                img: 'https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg',
-                alt: 'firebase'
-            },
-        ],
         os:[
-            {
-                link: 'https://aws.amazon.com/jp/amazon-linux-2/',
-                img: 'https://static-00.iconduck.com/assets.00/aws-ec2-elastic-compute-cloud-icon-423x512-i8pil4nj.png',
-                alt: 'amazon linux'
-            }, 
             {
                 link: 'https://ubuntu.com/',
                 img: 'https://cdn.worldvectorlogo.com/logos/ubuntu-4.svg',
                 alt: 'ubuntu'
             }, 
+            {
+                link: 'https://www.centos.org/',
+                img: 'https://cdn.worldvectorlogo.com/logos/centos-1.svg',
+                alt: 'centos'
+            },
             {
                 link: 'https://www.apple.com/macos/big-sur/',
                 img: 'https://cdn.worldvectorlogo.com/logos/macos.svg',
@@ -191,6 +189,16 @@ export default function Tools() {
                 img: 'https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg',
                 alt: 'git'
             }, 
+            {
+                link: 'https://github.com',
+                img: 'https://cdn.worldvectorlogo.com/logos/github-icon-1.svg',
+                alt: 'github'
+            },
+            {
+                link: 'https://firebase.google.com/',
+                img: 'https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg',
+                alt: 'firebase'
+            },
             {
                 link: 'https://www.docker.com/',
                 img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg',
@@ -237,11 +245,11 @@ export default function Tools() {
     return (
         <ul style={{ listStyle: 'none' }} className="m-0 p-0">
             <li>
-                <h5 className="title-left">Languages</h5>
+                <h5>Languages</h5>
                 <div className="bg-white rounded">
                     <p className="mt-4 p-3" align="left">
                         {tools.languages.map(t => 
-                            <a href={t.link} target="_blank" className="mx-1"> 
+                            <a href={t.link} target="_blank" className="mr-1"> 
                                 <img src={t.img} alt={t.alt} width="40" height="40"/> 
                             </a>
                         )}
@@ -249,11 +257,11 @@ export default function Tools() {
                 </div>
             </li>
             <li>
-                <h5 className="title-left">Frameworks</h5>
+                <h5>Frameworks</h5>
                 <div className="bg-white rounded">
                     <p className="mt-4 p-3" align="left">
                         {tools.frameworks.map(t => 
-                            <a href={t.link} target="_blank" className="mx-1"> 
+                            <a href={t.link} target="_blank" className="mr-1"> 
                                 <img src={t.img} alt={t.alt} width="40" height="40"/> 
                             </a>
                         )}
@@ -261,23 +269,11 @@ export default function Tools() {
                 </div>
             </li>
             <li>
-                <h5 className="title-left">Database</h5>
-                <div className="bg-white rounded">
-                    <p className="mt-4 p-3" align="left">
-                        {tools.database.map(t => 
-                            <a href={t.link} target="_blank" className="mx-1"> 
-                                <img src={t.img} alt={t.alt} width="40" height="40"/> 
-                            </a>
-                        )}
-                    </p>
-                </div>
-            </li>
-            <li>
-                <h5 className="title-left">AWS</h5>
+                <h5>AWS</h5>
                 <div className="bg-white rounded">
                     <p className="mt-4 p-3" align="left">
                         {tools.aws.map(t => 
-                            <a href={t.link} target="_blank" className="mx-1"> 
+                            <a href={t.link} target="_blank" className="mr-1"> 
                                 <img src={t.img} alt={t.alt} width="40" height="40"/> 
                             </a>
                         )}
@@ -285,23 +281,11 @@ export default function Tools() {
                 </div>
             </li>
             <li>
-                <h5 className="title-left">GCP</h5>
-                <div className="bg-white rounded">
-                    <p className="mt-4 p-3" align="left">
-                        {tools.gcp.map(t => 
-                            <a href={t.link} target="_blank" className="mx-1"> 
-                                <img src={t.img} alt={t.alt} width="40" height="40"/> 
-                            </a>
-                        )}
-                    </p>
-                </div>
-            </li>
-            <li>
-                <h5 className="title-left">OS</h5>
+                <h5>OS</h5>
                 <div className="bg-white rounded">
                     <p className="mt-4 p-3" align="left">
                         {tools.os.map(t => 
-                            <a href={t.link} target="_blank" className="mx-1"> 
+                            <a href={t.link} target="_blank" className="mr-1"> 
                                 <img src={t.img} alt={t.alt} width="40" height="40"/> 
                             </a>
                         )}
@@ -309,11 +293,23 @@ export default function Tools() {
                 </div>
             </li>
             <li>
-                <h5 className="title-left">Others</h5>
+                <h5>Database</h5>
+                <div className="bg-white rounded">
+                    <p className="mt-4 p-3" align="left">
+                        {tools.database.map(t => 
+                            <a href={t.link} target="_blank" className="mr-1"> 
+                                <img src={t.img} alt={t.alt} width="40" height="40"/> 
+                            </a>
+                        )}
+                    </p>
+                </div>
+            </li>
+            <li>
+                <h5>Others</h5>
                 <div className="bg-white rounded">
                     <p className="mt-4 p-3" align="left">
                         {tools.others.map(t => 
-                            <a href={t.link} target="_blank" className="mx-1"> 
+                            <a href={t.link} target="_blank" className="mr-1"> 
                                 <img src={t.img} alt={t.alt} width="40" height="40"/> 
                             </a>
                         )}
