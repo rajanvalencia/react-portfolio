@@ -253,19 +253,19 @@ export default function Intro() {
               <p className="pt-1">
                 <a
                   className="btn btn-outline-light btn btn-block js-scroll px-4"
-                  href="http://multiyouth.com/multiculturalyouth"
+                  href="http://github.com/rajanvalencia"
                   role="button"
                 >
-                  多文化ユースプロジェクト
+                  Github
                 </a>
               </p>
               <p className="pt-1">
                 <a
                   className="btn btn-outline-light btn btn-block js-scroll px-4"
-                  href="http://github.com/rajanvalencia"
+                  href="http://multiyouth.com/multiculturalyouth"
                   role="button"
                 >
-                  Github
+                  多文化ユースプロジェクト
                 </a>
               </p>
               {/* <p className="pt-1">

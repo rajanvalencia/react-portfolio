@@ -18,11 +18,26 @@ export default function Tools() {
                 link: 'https://www.php.net',
                 img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg',
                 alt: 'php'
-            }, 
+            },
+            {
+                link: 'https://python.org/',
+                img: 'https://cdn.worldvectorlogo.com/logos/python-5.svg',
+                alt: 'python'
+            },
+            {
+                link: 'https://jquery.com/',
+                img: 'https://cdn.worldvectorlogo.com/logos/jquery-1.svg',
+                alt: 'jQuery'
+            },
             {
                 link: 'https://www.w3schools.com/cpp/',
                 img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg',
                 alt: 'cplusplus'
+            },
+            {
+                link: 'https://jquery.com/',
+                img: 'https://cdn.worldvectorlogo.com/logos/jquery-1.svg',
+                alt: 'jQuery'
             },
             {
                 link: 'https://www.w3schools.com/css/',
@@ -46,6 +61,11 @@ export default function Tools() {
                 img: 'https://cdn.worldvectorlogo.com/logos/next-js.svg',
                 alt: 'nextjs'
             }, 
+            {
+                link: 'https://nodejs.org/',
+                img: 'https://cdn.worldvectorlogo.com/logos/nodejs-1.svg',
+                alt: 'nodejs'
+            },
             {
                 link: 'https://spring.io/',
                 img: 'https://www.vectorlogo.zone/logos/springio/springio-icon.svg',
@@ -223,6 +243,11 @@ export default function Tools() {
                 link: 'https://getbootstrap.com',
                 img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg',
                 alt: 'bootstrap'
+            },  
+            {
+                link: 'https://materializecss.com/',
+                img: 'https://cdn.worldvectorlogo.com/logos/materialize-css-1.svg',
+                alt: 'materializecss'
             },  
             {
                 link: 'https://postman.com',
