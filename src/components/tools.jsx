@@ -274,7 +274,7 @@ export default function Tools() {
                 <h4>Languages</h4>
                 <div className="bg-white rounded">
                     <p className="mt-4 p-3" target="_blank" align="left">
-                        {tools.languages.map((t, index) => 
+                        {tools.languages.map(t => 
                             <a href={t.link} className="mr-1"> 
                                 <img src={t.img} alt={t.alt} width="40" height="40"/> 
                             </a>
@@ -286,7 +286,7 @@ export default function Tools() {
                 <h4>Frameworks</h4>
                 <div className="bg-white rounded">
                     <p className="mt-4 p-3" align="left">
-                        {tools.frameworks.map((t, index) => 
+                        {tools.frameworks.map(t => 
                             <a href={t.link} target="_blank" className="mr-1" data-toggle="tooltip" data-placement="top" title={t.alt}> 
                                 <img src={t.img} alt={t.alt} width="40" height="40"/> 
                             </a>
@@ -298,7 +298,7 @@ export default function Tools() {
                 <h4>AWS</h4>
                 <div className="bg-white rounded">
                     <p className="mt-4 p-3" align="left">
-                        {tools.aws.map((t, index) => 
+                        {tools.aws.map(t => 
                             <a href={t.link} target="_blank" className="mr-1" data-toggle="tooltip" data-placement="top" title={t.alt}>
                                 <img src={t.img} alt={t.alt} width="40" height="40"/> 
                             </a>
@@ -310,7 +310,7 @@ export default function Tools() {
                 <h4>OS</h4>
                 <div className="bg-white rounded">
                     <p className="mt-4 p-3" align="left">
-                        {tools.os.map((t, index) => 
+                        {tools.os.map(t => 
                             <a href={t.link} target="_blank" className="mr-1" data-toggle="tooltip" data-placement="top" title={t.alt}> 
                                 <img src={t.img} alt={t.alt} width="40" height="40"/> 
                             </a>
@@ -322,7 +322,7 @@ export default function Tools() {
                 <h4>Database</h4>
                 <div className="bg-white rounded">
                     <p className="mt-4 p-3" align="left">
-                        {tools.database.map((t, index) => 
+                        {tools.database.map(t => 
                             <a href={t.link} target="_blank" className="mr-1" data-toggle="tooltip" data-placement="top" title={t.alt}> 
                                 <img src={t.img} alt={t.alt} width="40" height="40"/> 
                             </a>
@@ -334,7 +334,7 @@ export default function Tools() {
                 <h4>Others</h4>
                 <div className="bg-white rounded">
                     <p className="mt-4 p-3" align="left">
-                        {tools.others.map((t, index) => 
+                        {tools.others.map(t => 
                             <a href={t.link} target="_blank" className="mr-1" data-toggle="tooltip" data-placement="top" title={t.alt}> 
                                 <img src={t.img} alt={t.alt} width="40" height="40"/> 
                             </a>
