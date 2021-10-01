@@ -126,6 +126,11 @@ export default function Tools() {
                 alt: 'Codestar'
             },
             {
+                link: 'https://aws.amazon.com/comprehend/',
+                img: 'https://symbols.getvecta.com/stencil_258/0_aws-comprehend.068d98ba38.svg',
+                alt: 'Comprehend'
+            },
+            {
                 link: 'https://aws.amazon.com/ec2/',
                 img: 'https://symbols.getvecta.com/stencil_9/0_ec2.607c2cfeab.svg',
                 alt: 'EC2'
@@ -146,6 +151,11 @@ export default function Tools() {
                 alt: 'Elastic Container Service'
             },
             {
+                link: 'https://aws.amazon.com/jp/elasticloadbalancing/',
+                img: 'https://symbols.getvecta.com/stencil_20/20_elastic-load-balancing.e612ef989d.svg',
+                alt: 'Elastic Load Balancing'
+            },
+            {
                 link: 'https://aws.amazon.com/iam/',
                 img: 'https://symbols.getvecta.com/stencil_23/11_iam.ff93ec62a2.svg',
                 alt: 'IAM'
@@ -154,6 +164,11 @@ export default function Tools() {
                 link: 'https://aws.amazon.com/lambda/',
                 img: 'https://symbols.getvecta.com/stencil_74/144_aws-lambda-icon.70ee4ffc8e.svg',
                 alt: 'Lambda'
+            },
+            {
+                link: 'https://aws.amazon.com/rekognition/',
+                img: 'https://symbols.getvecta.com/stencil_7/3_amazon-rekognition.b9683a0796.svg',
+                alt: 'Rekognition'
             },
             {
                 link: 'https://aws.amazon.com/rds/',
@@ -177,6 +192,11 @@ export default function Tools() {
             },
         ],
         gcp: [
+            {
+                link: 'https://cloud.google.com/storage',
+                img: 'https://symbols.getvecta.com/stencil_4/47_google-cloud-storage.ee53caf67f.svg',
+                alt: 'Cloud Storage'
+            },
             {
                 link: 'https://firebase.google.com/',
                 img: 'https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg',
