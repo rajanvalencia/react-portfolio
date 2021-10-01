@@ -251,9 +251,14 @@ export default function Tools() {
                 alt: 'Linux'
             },
             {
-                link: 'https://www.apple.com/macos/big-sur/',
+                link: 'https://www.apple.com/macos',
                 img: 'https://cdn.worldvectorlogo.com/logos/macos.svg',
                 alt: 'MacOS'
+            }, 
+            {
+                link: 'https://www.microsoft.com/windows',
+                img: 'https://cdn.worldvectorlogo.com/logos/microsoft-windows-22.svg',
+                alt: 'Windows'
             }, 
         ],
         others : [
@@ -273,6 +278,11 @@ export default function Tools() {
                 alt: 'Docker'
             },
             {
+                link: 'https://www.eclipse.org/',
+                img: 'https://cdn.worldvectorlogo.com/logos/eclipse-11.svg',
+                alt: 'Eclipse'
+            },
+            {
                 link: 'https://www.gnu.org/software/bash/',
                 img: 'https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg',
                 alt: 'Bash'
@@ -284,13 +294,23 @@ export default function Tools() {
             },
             {
                 link: 'https://getbootstrap.com',
-                img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg',
+                img: 'https://cdn.worldvectorlogo.com/logos/bootstrap-5-1.svg',
                 alt: 'Bootstrap'
             },  
+            {
+                link: 'https://www.opengl.org/',
+                img: 'https://cdn.worldvectorlogo.com/logos/opengl-1.svg',
+                alt: 'OpenGL'
+            },
             {
                 link: 'https://postman.com',
                 img: 'https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg',
                 alt: 'PostMan'
+            }, 
+            {
+                link: 'https://visualstudio.com/',
+                img: 'https://cdn.worldvectorlogo.com/logos/visual-studio-2013.svg',
+                alt: 'Visual Studio'
             }, 
             {
                 link: 'https://code.visualstudio.com/',
