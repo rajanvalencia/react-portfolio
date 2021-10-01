@@ -268,6 +268,11 @@ export default function Tools() {
                 alt: 'Bash'
             }, 
             {
+                link: 'https://jwt.io',
+                img: 'https://cdn.worldvectorlogo.com/logos/jwt-3.svg',
+                alt: 'JWT'
+            },
+            {
                 link: 'https://getbootstrap.com',
                 img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg',
                 alt: 'Bootstrap'
@@ -297,6 +302,11 @@ export default function Tools() {
                 img: 'https://cdn.worldvectorlogo.com/logos/fontawesome-1.svg',
                 alt: 'FontAwesome'
             }, 
+            {
+                link: 'https://wordpress.com/',
+                img: 'https://cdn.worldvectorlogo.com/logos/wordpress-blue.svg',
+                alt: 'WordPress'
+            },
         ]
     };
 
