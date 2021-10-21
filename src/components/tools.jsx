@@ -6,8 +6,13 @@ export default function Tools() {
         languages : [
             {
                 link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
-                img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg',
+                img: 'https://cdn.worldvectorlogo.com/logos/logo-javascript.svg',
                 alt: 'Javascript'
+            },
+            {
+                link: 'https://www.typescriptlang.org/',
+                img: 'https://cdn.worldvectorlogo.com/logos/typescript.svg',
+                alt: 'Typescript'
             },
             {
                 link: 'https://www.java.com',
@@ -28,11 +33,6 @@ export default function Tools() {
                 link: 'https://www.w3schools.com/cpp/',
                 img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg',
                 alt: 'C++'
-            },
-            {
-                link: 'https://jquery.com/',
-                img: 'https://cdn.worldvectorlogo.com/logos/jquery-1.svg',
-                alt: 'jQuery'
             },
             {
                 link: 'https://www.w3schools.com/css/',
@@ -261,6 +261,60 @@ export default function Tools() {
                 alt: 'Windows'
             }, 
         ],
+        editors :[
+            {
+                link: 'https://www.eclipse.org/',
+                img: 'https://cdn.worldvectorlogo.com/logos/eclipse-11.svg',
+                alt: 'Eclipse'
+            },
+            {
+                link: 'https://visualstudio.com/',
+                img: 'https://cdn.worldvectorlogo.com/logos/visual-studio-2013.svg',
+                alt: 'Visual Studio'
+            }, 
+            {
+                link: 'https://code.visualstudio.com/',
+                img: 'https://cdn.worldvectorlogo.com/logos/visual-studio-code-1.svg',
+                alt: 'VS Code'
+            }, 
+        ],
+        libraries : [
+            {
+                link: 'https://getbootstrap.com',
+                img: 'https://cdn.worldvectorlogo.com/logos/bootstrap-5-1.svg',
+                alt: 'Bootstrap'
+            },
+            {
+                link: 'https://fontawesome.com/',
+                img: 'https://cdn.worldvectorlogo.com/logos/fontawesome-1.svg',
+                alt: 'FontAwesome'
+            },
+            {
+                link: 'https://jquery.com/',
+                img: 'https://cdn.worldvectorlogo.com/logos/jquery-1.svg',
+                alt: 'jQuery'
+            },
+            {
+                link: 'https://jwt.io',
+                img: 'https://cdn.worldvectorlogo.com/logos/jwt-3.svg',
+                alt: 'JWT'
+            },
+            {
+                link: 'https://mapbox.com/',
+                img: 'https://cdn.worldvectorlogo.com/logos/mapbox-2.svg',
+                alt: 'Mapbox'
+            }, 
+            {
+                link: 'https://www.opengl.org/',
+                img: 'https://cdn.worldvectorlogo.com/logos/opengl-1.svg',
+                alt: 'OpenGL'
+            },
+            {
+                link: 'https://stripe.com/',
+                img: 'https://cdn.worldvectorlogo.com/logos/stripe-4.svg',
+                alt: 'Stripe'
+            }, 
+        ],
         others : [
             {
                 link: 'https://git-scm.com/',
@@ -278,60 +332,15 @@ export default function Tools() {
                 alt: 'Docker'
             },
             {
-                link: 'https://www.eclipse.org/',
-                img: 'https://cdn.worldvectorlogo.com/logos/eclipse-11.svg',
-                alt: 'Eclipse'
-            },
-            {
                 link: 'https://www.gnu.org/software/bash/',
                 img: 'https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg',
                 alt: 'Bash'
-            }, 
-            {
-                link: 'https://jwt.io',
-                img: 'https://cdn.worldvectorlogo.com/logos/jwt-3.svg',
-                alt: 'JWT'
-            },
-            {
-                link: 'https://getbootstrap.com',
-                img: 'https://cdn.worldvectorlogo.com/logos/bootstrap-5-1.svg',
-                alt: 'Bootstrap'
-            },  
-            {
-                link: 'https://www.opengl.org/',
-                img: 'https://cdn.worldvectorlogo.com/logos/opengl-1.svg',
-                alt: 'OpenGL'
-            },
+            },   
             {
                 link: 'https://postman.com',
                 img: 'https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg',
                 alt: 'PostMan'
-            }, 
-            {
-                link: 'https://visualstudio.com/',
-                img: 'https://cdn.worldvectorlogo.com/logos/visual-studio-2013.svg',
-                alt: 'Visual Studio'
-            }, 
-            {
-                link: 'https://code.visualstudio.com/',
-                img: 'https://cdn.worldvectorlogo.com/logos/visual-studio-code-1.svg',
-                alt: 'VS Code'
-            }, 
-            {
-                link: 'https://stripe.com/',
-                img: 'https://cdn.worldvectorlogo.com/logos/stripe-4.svg',
-                alt: 'Stripe'
-            }, 
-            {
-                link: 'https://mapbox.com/',
-                img: 'https://cdn.worldvectorlogo.com/logos/mapbox-2.svg',
-                alt: 'Mapbox'
-            }, 
-            {
-                link: 'https://fontawesome.com/',
-                img: 'https://cdn.worldvectorlogo.com/logos/fontawesome-1.svg',
-                alt: 'FontAwesome'
-            }, 
+            },  
             {
                 link: 'https://wordpress.com/',
                 img: 'https://cdn.worldvectorlogo.com/logos/wordpress-blue.svg',
@@ -407,6 +416,30 @@ export default function Tools() {
                 <div className="bg-white rounded">
                     <p className="mt-4 p-3" align="left">
                         {tools.database.map(t => 
+                            <a href={t.link} target="_blank" className="mr-1" data-toggle="tooltip" data-placement="top" title={t.alt}> 
+                                <img src={t.img} alt={t.alt} width="40" height="40"/> 
+                            </a>
+                        )}
+                    </p>
+                </div>
+            </li>
+            <li>
+                <h4>Editors</h4>
+                <div className="bg-white rounded">
+                    <p className="mt-4 p-3" align="left">
+                        {tools.editors.map(t => 
+                            <a href={t.link} target="_blank" className="mr-1" data-toggle="tooltip" data-placement="top" title={t.alt}> 
+                                <img src={t.img} alt={t.alt} width="40" height="40"/> 
+                            </a>
+                        )}
+                    </p>
+                </div>
+            </li>
+            <li>
+                <h4>Libraries</h4>
+                <div className="bg-white rounded">
+                    <p className="mt-4 p-3" align="left">
+                        {tools.libraries.map(t => 
                             <a href={t.link} target="_blank" className="mr-1" data-toggle="tooltip" data-placement="top" title={t.alt}> 
                                 <img src={t.img} alt={t.alt} width="40" height="40"/> 
                             </a>
