@@ -361,7 +361,7 @@ export default function Tools() {
                 <div className="bg-white rounded">
                     <p className="mt-4 p-3" target="_blank" align="left">
                         {tools.languages.map(t => 
-                            <a href={t.link} className="mr-1"> 
+                            <a href={t.link} target="_blank" className="mr-1" data-toggle="tooltip" data-placement="top" title={t.alt}> 
                                 <img src={t.img} alt={t.alt} width="40" height="40" style={{ margin: '0.25rem 0 0.25rem 0' }} /> 
                             </a>
                         )}
