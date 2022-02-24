@@ -11,8 +11,8 @@ export default function Intro() {
   const [start, setStart] = useState({
     MultiYouthDeveloper_English: true,
     MultiYouthDeveloper_Japanese: true,
-    FullstackWebDeveloper_English: true,
-    FullstackWebDeveloper_Japanese: true,
+    SoftwareDeveloper_English: true,
+    SoftwareDeveloper_Japanese: true,
     TheMulticulturalYouthProjectDeputyRepesentative_English: false,
     TheMulticulturalYouthProjectDeputyRepesentative_Japanese: false
   });
@@ -20,8 +20,8 @@ export default function Intro() {
   const [complete, setComplete] = useState({
     MultiYouthDeveloper_English: false,
     MultiYouthDeveloper_Japanese: false,
-    FullstackWebDeveloper_English: false,
-    FullstackWebDeveloper_Japanese: false,
+    SoftwareDeveloper_English: false,
+    SoftwareDeveloper_Japanese: false,
     TheMulticulturalYouthProjectDeputyRepesentative_English: false,
     TheMulticulturalYouthProjectDeputyRepesentative_Japanese: false
   });
@@ -40,8 +40,8 @@ export default function Intro() {
         ...start,
         MultiYouthDeveloper_English: false,
         MultiYouthDeveloper_Japanese: false,
-        FullstackWebDeveloper_English: true,
-        FullstackWebDeveloper_Japanese: true
+        SoftwareDeveloper_English: true,
+        SoftwareDeveloper_Japanese: true
       });
       setComplete({
         ...complete,
@@ -50,18 +50,18 @@ export default function Intro() {
       });
     }
 
-    if (complete.FullstackWebDeveloper_English && complete.FullstackWebDeveloper_Japanese) {
+    if (complete.SoftwareDeveloper_English && complete.SoftwareDeveloper_Japanese) {
       setStart({
         ...start,
-        FullstackWebDeveloper_English: false,
-        FullstackWebDeveloper_Japanese: false,
+        SoftwareDeveloper_English: false,
+        SoftwareDeveloper_Japanese: false,
         TheMulticulturalYouthProjectDeputyRepesentative_English: true,
         TheMulticulturalYouthProjectDeputyRepesentative_Japanese: true
       });
       setComplete({
         ...complete,
-        FullstackWebDeveloper_English: false,
-        FullstackWebDeveloper_Japanese: false
+        SoftwareDeveloper_English: false,
+        SoftwareDeveloper_Japanese: false
       });
     }
 
@@ -72,8 +72,8 @@ export default function Intro() {
         TheMulticulturalYouthProjectDeputyRepesentative_Japanese: false,
         // MultiYouthDeveloper_English: true,
         // MultiYouthDeveloper_Japanese: true,
-        FullstackWebDeveloper_English: true,
-        FullstackWebDeveloper_Japanese: true,
+        SoftwareDeveloper_English: true,
+        SoftwareDeveloper_Japanese: true,
       });
       setComplete({
         ...complete,
@@ -106,17 +106,17 @@ export default function Intro() {
     });
   }
 
-  const onFullstackWebDeveloper_EnglishComplete = () => {
+  const onSoftwareDeveloper_EnglishComplete = () => {
     setComplete({
       ...complete,
-      FullstackWebDeveloper_English: true
+      SoftwareDeveloper_English: true
     });
   }
 
-  const onFullstackWebDeveloper_JapaneseComplete = () => {
+  const onSoftwareDeveloper_JapaneseComplete = () => {
     setComplete({
       ...complete,
-      FullstackWebDeveloper_Japanese: true
+      SoftwareDeveloper_Japanese: true
     });
   }
 
@@ -149,28 +149,28 @@ export default function Intro() {
             <p className="intro-subtitle">
               <span className="text-slider-items"></span>
               <strong className="text-slider">
-              {start.FullstackWebDeveloper_English && start.FullstackWebDeveloper_Japanese &&
+              {start.SoftwareDeveloper_English && start.SoftwareDeveloper_Japanese &&
                   <Fragment>
                     <Typed
                       strings={[
-                        "Full Stack Web Developer",
+                        "Software Developer",
                       ]}
                       style={{ fontSize: '20px' }}
                       typeSpeed={40}
                       backDelay={1100}
                       backSpeed={90}
-                      onComplete={onFullstackWebDeveloper_EnglishComplete}
+                      onComplete={onSoftwareDeveloper_EnglishComplete}
                     />
                     <br />
                     <Typed
                       strings={[
-                        "フルスタックエンジニア",
+                        "ソフトウェアエンジニア",
                       ]}
                       style={{ fontSize: '20px' }}
-                      typeSpeed={89}
+                      typeSpeed={65}
                       backDelay={1100}
                       backSpeed={90}
-                      onComplete={onFullstackWebDeveloper_JapaneseComplete}
+                      onComplete={onSoftwareDeveloper_JapaneseComplete}
                     />
                   </Fragment>
                 }
