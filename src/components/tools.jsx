@@ -1,4 +1,24 @@
 import React from 'react';
+import AWSAmplify from 'aws-svg-icons/lib/Architecture-Service-Icons_07302021/Arch_Front-End-Web-Mobile/48/Arch_AWS-Amplify_48.svg';
+import CertificateManager from 'aws-svg-icons/lib/Architecture-Service-Icons_07302021/Arch_Security-Identity-Compliance/64/Arch_AWS-Certificate-Manager_64.svg';
+import CloudFormation from 'aws-svg-icons/lib/Architecture-Service-Icons_07302021/Arch_Management-Governance/48/Arch_AWS-CloudFormation_48.svg';
+import Cloudfront from 'aws-svg-icons/lib/Architecture-Service-Icons_07302021/Arch_Networking-Content-Delivery/48/Arch_Amazon-CloudFront_48.svg';
+import CloudWatch from 'aws-svg-icons/lib/Architecture-Service-Icons_07302021/Arch_Management-Governance/48/Arch_Amazon-CloudWatch_48.svg';
+import CodeBuild from 'aws-svg-icons/lib/Architecture-Service-Icons_07302021/Arch_Developer-Tools/48/Arch_AWS-CodeBuild_48.svg';
+import CodePipeline from 'aws-svg-icons/lib/Architecture-Service-Icons_07302021/Arch_Developer-Tools/48/Arch_AWS-CodePipeline_48.svg';
+import Codestar from 'aws-svg-icons/lib/Architecture-Service-Icons_07302021/Arch_Developer-Tools/48/Arch_AWS-CodeStar_48.svg';
+import Comprehend from 'aws-svg-icons/lib/Architecture-Service-Icons_07302021/Arch_Machine-Learning/48/Arch_Amazon-Comprehend_48.svg';
+import EC2 from 'aws-svg-icons/lib/Architecture-Service-Icons_07302021/Arch_Compute/48/Arch_Amazon-Elastic-Container-Service_48.svg';
+import ElasticBeanstalk from 'aws-svg-icons/lib/Architecture-Service-Icons_07302021/Arch_Compute/48/Arch_AWS-Elastic-Beanstalk_48.svg';
+import ElasticContainerService from 'aws-svg-icons/lib/Architecture-Service-Icons_07302021/Arch_Compute/48/Arch_Amazon-Elastic-Container-Service_48.svg';
+import ElasticLoadBalancing from 'aws-svg-icons/lib/Architecture-Service-Icons_07302021/Arch_Networking-Content-Delivery/48/Arch_Elastic-Load-Balancing_48.svg';
+import IAM from 'aws-svg-icons/lib/Resource-Icons_07302021/Res_Security-Identity-and-Compliance/Res_48_Light/Res_AWS-Identity-Access-Management_AWS-IAM-Access-Analyzer_48_Light.svg';
+import Lambda from 'aws-svg-icons/lib/Architecture-Service-Icons_07302021/Arch_Compute/48/Arch_AWS-Lambda_48.svg';
+import Rekognition from 'aws-svg-icons/lib/Architecture-Service-Icons_07302021/Arch_Machine-Learning/48/Arch_Amazon-Rekognition_48.svg';
+import RDS from 'aws-svg-icons/lib/Architecture-Service-Icons_07302021/Arch_Database/48/Arch_Amazon-RDS_48.svg';
+import Route53 from 'aws-svg-icons/lib/Architecture-Service-Icons_07302021/Arch_Networking-Content-Delivery/48/Arch_Amazon-Route-53_48.svg';
+import S3 from 'aws-svg-icons/lib/Architecture-Service-Icons_07302021/Arch_Storage/48/Arch_AWS-Snowmobile_48.svg';
+import SimpleEmailService from 'aws-svg-icons/lib/Architecture-Service-Icons_07302021/Arch_Business-Applications/48/Arch_Amazon-WorkMail_48.svg';
 
 export default function Tools() {
 
@@ -97,114 +117,114 @@ export default function Tools() {
         aws: [
             {
                 link: 'https://aws.amazon.com/amplify/',
-                img: 'https://docs.amplify.aws/assets/logo-dark.svg',
+                img: AWSAmplify,
                 alt: 'Amplify'
             },
             {
                 link: 'https://aws.amazon.com/certificate-manager/',
-                img: 'https://symbols.getvecta.com/stencil_23/3_aws-certificate-manager.b79c71d4c3.svg',
+                img: CertificateManager,
                 alt: 'Certificate Manager'
             },
             {
                 link: 'https://aws.amazon.com/cloudformation/',
-                img: 'https://symbols.getvecta.com/stencil_16/5_aws-cloudformation.89d93ec8e8.svg',
+                img: CloudFormation,
                 alt: 'Cloud Formation'
             },
             {
                 link: 'https://aws.amazon.com/cloudfront/',
-                img: 'https://symbols.getvecta.com/stencil_20/0_amazon-cloudfront.c349f9d1dc.svg',
+                img: Cloudfront,
                 alt: 'Cloudfront'
             },
             {
                 link: 'https://aws.amazon.com/cloudwatch/',
-                img: 'https://symbols.getvecta.com/stencil_73/84_amazon-cloudwatch-icon.10d39b18a6.svg',
+                img: CloudWatch,
                 alt: 'Cloudwatch'
             },
             {
                 link: 'https://aws.amazon.com/codebuild/',
-                img: 'https://symbols.getvecta.com/stencil_12/0_aws-codebuild.0c1cad5388.svg',
+                img: CodeBuild,
                 alt: 'Codebuild'
             },
             {
                 link: 'https://aws.amazon.com/codepipeline/',
-                img: 'https://symbols.getvecta.com/stencil_12/3_aws-codepipeline.2b22fe114b.svg',
+                img: CodePipeline,
                 alt: 'Code Pipeline'
             },
             {
                 link: 'https://aws.amazon.com/codestar/',
-                img: 'https://symbols.getvecta.com/stencil_12/5_aws-codestar.a7175af236.svg',
+                img: Codestar,
                 alt: 'Codestar'
             },
             {
                 link: 'https://aws.amazon.com/comprehend/',
-                img: 'https://symbols.getvecta.com/stencil_258/0_aws-comprehend.068d98ba38.svg',
+                img: Comprehend,
                 alt: 'Comprehend'
             },
             {
                 link: 'https://aws.amazon.com/ec2/',
-                img: 'https://symbols.getvecta.com/stencil_9/0_ec2.607c2cfeab.svg',
+                img: EC2,
                 alt: 'EC2'
             },
             {
                 link: 'https://aws.amazon.com/elasticbeanstalk/',
-                img: 'https://symbols.getvecta.com/stencil_9/32_aws-elastic-beanstalk.e06f11f2b0.svg',
+                img: ElasticBeanstalk,
                 alt: 'Elastic Beanstalk'
             },
             {
                 link: 'https://aws.amazon.com/ecr/',
-                img: 'https://symbols.getvecta.com/stencil_9/12_amazon-ecr.e2bb590423.svg',
+                img: ElasticContainerService,
                 alt: 'Elastic Container Registry'
             },
             {
                 link: 'https://aws.amazon.com/ecs/',
-                img: 'https://symbols.getvecta.com/stencil_9/14_amazon-ecs.0defeec970.svg',
+                img: ElasticContainerService,
                 alt: 'Elastic Container Service'
             },
             {
                 link: 'https://aws.amazon.com/jp/elasticloadbalancing/',
-                img: 'https://symbols.getvecta.com/stencil_20/20_elastic-load-balancing.e612ef989d.svg',
+                img: ElasticLoadBalancing,
                 alt: 'Elastic Load Balancing'
             },
             {
                 link: 'https://aws.amazon.com/iam/',
-                img: 'https://symbols.getvecta.com/stencil_23/11_iam.ff93ec62a2.svg',
+                img: IAM,
                 alt: 'IAM'
             },
             {
                 link: 'https://aws.amazon.com/lambda/',
-                img: 'https://symbols.getvecta.com/stencil_74/144_aws-lambda-icon.70ee4ffc8e.svg',
+                img: Lambda,
                 alt: 'Lambda'
             },
             {
                 link: 'https://aws.amazon.com/rekognition/',
-                img: 'https://symbols.getvecta.com/stencil_7/3_amazon-rekognition.b9683a0796.svg',
+                img: Rekognition,
                 alt: 'Rekognition'
             },
             {
                 link: 'https://aws.amazon.com/rds/',
-                img: 'https://symbols.getvecta.com/stencil_10/12_amazon-rds.b2cd85c3d2.svg',
+                img: RDS,
                 alt: 'RDS'
             },
             {
                 link: 'https://aws.amazon.com/route53/',
-                img: 'https://cdn.worldvectorlogo.com/logos/aws-route53.svg',
+                img: Route53,
                 alt: 'Route53'
             },
             {
                 link: 'https://aws.amazon.com/s3/',
-                img: 'https://symbols.getvecta.com/stencil_24/6_amazon-s3.88314aefee.svg',
+                img: S3,
                 alt: 'S3'
             },
             {
                 link: 'https://aws.amazon.com/simpleemailservice/',
-                img: 'https://symbols.getvecta.com/stencil_17/1_amazon-ses.f2cd79b845.svg',
+                img: SimpleEmailService,
                 alt: 'Simple Email Service'
             },
         ],
         gcp: [
             {
                 link: 'https://cloud.google.com/storage',
-                img: 'https://symbols.getvecta.com/stencil_4/47_google-cloud-storage.ee53caf67f.svg',
+                img: 'https://cdn.worldvectorlogo.com/logos/google-cloud.svg',
                 alt: 'Cloud Storage'
             },
             {
